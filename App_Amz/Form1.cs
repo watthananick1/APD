@@ -292,5 +292,107 @@ namespace App_Amz
             listView1.Items.Clear();
             label8.Text = "0.00";
         }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.A) 
+            {
+                T_id = 1;
+                Console.WriteLine(T_id);
+
+                aPrductBindingSource.DataSource = context.APrduct
+                    .Where(p => p.AType.Id == T_id)
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.P_Name,
+                        p.UnitPrice,
+                    })
+                    .ToList();
+            }
+        }
+
+        private void button2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.S)
+            {
+                T_id = 2;
+                Console.WriteLine(T_id);
+                aPrductBindingSource.DataSource = context.APrduct
+                    .Where(p => p.AType.Id == T_id)
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.P_Name,
+                        p.UnitPrice,
+                    })
+                    .ToList();
+            }
+        }
+
+        private void button3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.D)
+            {
+                T_id = 3;
+                Console.WriteLine(T_id);
+                aPrductBindingSource.DataSource = context.APrduct
+                    .Where(p => p.AType.Id == T_id)
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.P_Name,
+                        p.UnitPrice,
+                    })
+                    .ToList();
+            }
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.A)
+            {
+                T_id = 1;
+                Console.WriteLine(T_id);
+
+                aPrductBindingSource.DataSource = context.APrduct
+                    .Where(p => p.AType.Id == T_id)
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.P_Name,
+                        p.UnitPrice,
+                    })
+                    .ToList();
+            }
+            else if (e.KeyChar == (char)Keys.S)
+            {
+                T_id = 2;
+                Console.WriteLine(T_id);
+                aPrductBindingSource.DataSource = context.APrduct
+                    .Where(p => p.AType.Id == T_id)
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.P_Name,
+                        p.UnitPrice,
+                    })
+                    .ToList();
+            }
+            else if (e.KeyChar == (char)Keys.D)
+            {
+                T_id = 3;
+                Console.WriteLine(T_id);
+                aPrductBindingSource.DataSource = context.APrduct
+                    .Where(p => p.AType.Id == T_id)
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.P_Name,
+                        p.UnitPrice,
+                    })
+                    .ToList();
+            }
+        }
     }
 }
