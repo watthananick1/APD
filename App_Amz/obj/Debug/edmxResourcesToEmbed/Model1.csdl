@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="APD65_63011212052Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ADtype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="D_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="APrduct" Relationship="Self.FK_APrduct_ADtype" FromRole="ADtype" ToRole="APrduct" />
+  </EntityType>
+  <EntityType Name="AOrderItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="O_id" Type="Int32" />
+    <Property Name="P_id" Type="Int32" />
+    <Property Name="U_price" Type="Decimal" Precision="12" Scale="2" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="P_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="APrduct" Relationship="Self.FK_AOrderItem_APrduct" FromRole="AOrderItem" ToRole="APrduct" />
+    <NavigationProperty Name="OrderProduct" Relationship="Self.FK_AOrderItem_OrderProduct" FromRole="AOrderItem" ToRole="OrderProduct" />
+  </EntityType>
+  <EntityType Name="APrduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="P_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="D_type" Type="Int32" />
+    <NavigationProperty Name="ADtype" Relationship="Self.FK_APrduct_ADtype" FromRole="APrduct" ToRole="ADtype" />
+    <NavigationProperty Name="AOrderItem" Relationship="Self.FK_AOrderItem_APrduct" FromRole="APrduct" ToRole="AOrderItem" />
+    <NavigationProperty Name="AType" Relationship="Self.FK_APrduct_AType" FromRole="APrduct" ToRole="AType" />
+  </EntityType>
+  <EntityType Name="AType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="T_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="APrduct" Relationship="Self.FK_APrduct_AType" FromRole="AType" ToRole="APrduct" />
+  </EntityType>
+  <EntityType Name="OrderProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TotalPrice" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+    <NavigationProperty Name="AOrderItem" Relationship="Self.FK_AOrderItem_OrderProduct" FromRole="OrderProduct" ToRole="AOrderItem" />
+  </EntityType>
+  <Association Name="FK_APrduct_ADtype">
+    <End Role="ADtype" Type="Self.ADtype" Multiplicity="0..1" />
+    <End Role="APrduct" Type="Self.APrduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ADtype">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="APrduct">
+        <PropertyRef Name="D_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AOrderItem_APrduct">
+    <End Role="APrduct" Type="Self.APrduct" Multiplicity="0..1" />
+    <End Role="AOrderItem" Type="Self.AOrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APrduct">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AOrderItem">
+        <PropertyRef Name="P_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AOrderItem_OrderProduct">
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AOrderItem" Type="Self.AOrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderProduct">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AOrderItem">
+        <PropertyRef Name="O_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_APrduct_AType">
+    <End Role="AType" Type="Self.AType" Multiplicity="0..1" />
+    <End Role="APrduct" Type="Self.APrduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="APrduct">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="APD65_63011212052Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ADtype" EntityType="Self.ADtype" />
+    <EntitySet Name="AOrderItem" EntityType="Self.AOrderItem" />
+    <EntitySet Name="APrduct" EntityType="Self.APrduct" />
+    <EntitySet Name="AType" EntityType="Self.AType" />
+    <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" />
+    <AssociationSet Name="FK_APrduct_ADtype" Association="Self.FK_APrduct_ADtype">
+      <End Role="ADtype" EntitySet="ADtype" />
+      <End Role="APrduct" EntitySet="APrduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AOrderItem_APrduct" Association="Self.FK_AOrderItem_APrduct">
+      <End Role="APrduct" EntitySet="APrduct" />
+      <End Role="AOrderItem" EntitySet="AOrderItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AOrderItem_OrderProduct" Association="Self.FK_AOrderItem_OrderProduct">
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+      <End Role="AOrderItem" EntitySet="AOrderItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_APrduct_AType" Association="Self.FK_APrduct_AType">
+      <End Role="AType" EntitySet="AType" />
+      <End Role="APrduct" EntitySet="APrduct" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

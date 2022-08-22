@@ -1,0 +1,16 @@
+C:\APD\Lab0301 Linq\bin\Debug\Lab0301 Linq.exe.config
+C:\APD\Lab0301 Linq\bin\Debug\Lab0301 Linq.exe
+C:\APD\Lab0301 Linq\bin\Debug\Lab0301 Linq.pdb
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301 Linq.csproj.AssemblyReference.cache
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301 Linq.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301_Linq.Form1.resources
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301_Linq.Properties.Resources.resources
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301 Linq.csproj.GenerateResource.cache
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301 Linq.csproj.CoreCompileInputs.cache
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301 Linq.exe
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301 Linq.pdb
+C:\APD\Lab0301 Linq\bin\Debug\EntityFramework.dll
+C:\APD\Lab0301 Linq\bin\Debug\EntityFramework.SqlServer.dll
+C:\APD\Lab0301 Linq\bin\Debug\EntityFramework.xml
+C:\APD\Lab0301 Linq\bin\Debug\EntityFramework.SqlServer.xml
+C:\APD\Lab0301 Linq\obj\Debug\Lab0301 Linq.csproj.CopyComplete

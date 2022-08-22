@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="APD65_63011212052Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ADtype">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="D_name" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AOrderItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="O_id" Type="int" />
+          <Property Name="P_id" Type="int" />
+          <Property Name="U_price" Type="decimal" Precision="12" Scale="2" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="P_name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="APrduct">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="P_Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UnitPrice" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+          <Property Name="Type" Type="int" />
+          <Property Name="D_type" Type="int" />
+        </EntityType>
+        <EntityType Name="AType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="T_name" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderProduct">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderDate" Type="date" Nullable="false" />
+          <Property Name="TotalPrice" Type="decimal" Precision="12" Scale="2" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AOrderItem_APrduct">
+          <End Role="APrduct" Type="Self.APrduct" Multiplicity="0..1" />
+          <End Role="AOrderItem" Type="Self.AOrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="APrduct">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AOrderItem">
+              <PropertyRef Name="P_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AOrderItem_OrderProduct">
+          <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AOrderItem" Type="Self.AOrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderProduct">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AOrderItem">
+              <PropertyRef Name="O_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_APrduct_ADtype">
+          <End Role="ADtype" Type="Self.ADtype" Multiplicity="0..1" />
+          <End Role="APrduct" Type="Self.APrduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADtype">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="APrduct">
+              <PropertyRef Name="D_type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_APrduct_AType">
+          <End Role="AType" Type="Self.AType" Multiplicity="0..1" />
+          <End Role="APrduct" Type="Self.APrduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="APrduct">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="APD65_63011212052ModelStoreContainer">
+          <EntitySet Name="ADtype" EntityType="Self.ADtype" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AOrderItem" EntityType="Self.AOrderItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="APrduct" EntityType="Self.APrduct" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AType" EntityType="Self.AType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AOrderItem_APrduct" Association="Self.FK_AOrderItem_APrduct">
+            <End Role="APrduct" EntitySet="APrduct" />
+            <End Role="AOrderItem" EntitySet="AOrderItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AOrderItem_OrderProduct" Association="Self.FK_AOrderItem_OrderProduct">
+            <End Role="OrderProduct" EntitySet="OrderProduct" />
+            <End Role="AOrderItem" EntitySet="AOrderItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_APrduct_ADtype" Association="Self.FK_APrduct_ADtype">
+            <End Role="ADtype" EntitySet="ADtype" />
+            <End Role="APrduct" EntitySet="APrduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_APrduct_AType" Association="Self.FK_APrduct_AType">
+            <End Role="AType" EntitySet="AType" />
+            <End Role="APrduct" EntitySet="APrduct" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="APD65_63011212052Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ADtype">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="D_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="APrduct" Relationship="Self.FK_APrduct_ADtype" FromRole="ADtype" ToRole="APrduct" />
+        </EntityType>
+        <EntityType Name="AOrderItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="O_id" Type="Int32" />
+          <Property Name="P_id" Type="Int32" />
+          <Property Name="U_price" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="P_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="APrduct" Relationship="Self.FK_AOrderItem_APrduct" FromRole="AOrderItem" ToRole="APrduct" />
+          <NavigationProperty Name="OrderProduct" Relationship="Self.FK_AOrderItem_OrderProduct" FromRole="AOrderItem" ToRole="OrderProduct" />
+        </EntityType>
+        <EntityType Name="APrduct">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="P_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UnitPrice" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="D_type" Type="Int32" />
+          <NavigationProperty Name="ADtype" Relationship="Self.FK_APrduct_ADtype" FromRole="APrduct" ToRole="ADtype" />
+          <NavigationProperty Name="AOrderItem" Relationship="Self.FK_AOrderItem_APrduct" FromRole="APrduct" ToRole="AOrderItem" />
+          <NavigationProperty Name="AType" Relationship="Self.FK_APrduct_AType" FromRole="APrduct" ToRole="AType" />
+        </EntityType>
+        <EntityType Name="AType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="T_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="APrduct" Relationship="Self.FK_APrduct_AType" FromRole="AType" ToRole="APrduct" />
+        </EntityType>
+        <EntityType Name="OrderProduct">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="TotalPrice" Type="Decimal" Precision="12" Scale="2" Nullable="false" />
+          <NavigationProperty Name="AOrderItem" Relationship="Self.FK_AOrderItem_OrderProduct" FromRole="OrderProduct" ToRole="AOrderItem" />
+        </EntityType>
+        <Association Name="FK_APrduct_ADtype">
+          <End Role="ADtype" Type="Self.ADtype" Multiplicity="0..1" />
+          <End Role="APrduct" Type="Self.APrduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ADtype">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="APrduct">
+              <PropertyRef Name="D_type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AOrderItem_APrduct">
+          <End Role="APrduct" Type="Self.APrduct" Multiplicity="0..1" />
+          <End Role="AOrderItem" Type="Self.AOrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="APrduct">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AOrderItem">
+              <PropertyRef Name="P_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AOrderItem_OrderProduct">
+          <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AOrderItem" Type="Self.AOrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderProduct">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AOrderItem">
+              <PropertyRef Name="O_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_APrduct_AType">
+          <End Role="AType" Type="Self.AType" Multiplicity="0..1" />
+          <End Role="APrduct" Type="Self.APrduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="APrduct">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="APD65_63011212052Entities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ADtype" EntityType="Self.ADtype" />
+          <EntitySet Name="AOrderItem" EntityType="Self.AOrderItem" />
+          <EntitySet Name="APrduct" EntityType="Self.APrduct" />
+          <EntitySet Name="AType" EntityType="Self.AType" />
+          <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" />
+          <AssociationSet Name="FK_APrduct_ADtype" Association="Self.FK_APrduct_ADtype">
+            <End Role="ADtype" EntitySet="ADtype" />
+            <End Role="APrduct" EntitySet="APrduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AOrderItem_APrduct" Association="Self.FK_AOrderItem_APrduct">
+            <End Role="APrduct" EntitySet="APrduct" />
+            <End Role="AOrderItem" EntitySet="AOrderItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AOrderItem_OrderProduct" Association="Self.FK_AOrderItem_OrderProduct">
+            <End Role="OrderProduct" EntitySet="OrderProduct" />
+            <End Role="AOrderItem" EntitySet="AOrderItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_APrduct_AType" Association="Self.FK_APrduct_AType">
+            <End Role="AType" EntitySet="AType" />
+            <End Role="APrduct" EntitySet="APrduct" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="APD65_63011212052ModelStoreContainer" CdmEntityContainer="APD65_63011212052Entities1">
+          <EntitySetMapping Name="ADtype">
+            <EntityTypeMapping TypeName="APD65_63011212052Model.ADtype">
+              <MappingFragment StoreEntitySet="ADtype">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="D_name" ColumnName="D_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AOrderItem">
+            <EntityTypeMapping TypeName="APD65_63011212052Model.AOrderItem">
+              <MappingFragment StoreEntitySet="AOrderItem">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="O_id" ColumnName="O_id" />
+                <ScalarProperty Name="P_id" ColumnName="P_id" />
+                <ScalarProperty Name="U_price" ColumnName="U_price" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="P_name" ColumnName="P_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="APrduct">
+            <EntityTypeMapping TypeName="APD65_63011212052Model.APrduct">
+              <MappingFragment StoreEntitySet="APrduct">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="P_Name" ColumnName="P_Name" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="D_type" ColumnName="D_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AType">
+            <EntityTypeMapping TypeName="APD65_63011212052Model.AType">
+              <MappingFragment StoreEntitySet="AType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="T_name" ColumnName="T_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderProduct">
+            <EntityTypeMapping TypeName="APD65_63011212052Model.OrderProduct">
+              <MappingFragment StoreEntitySet="OrderProduct">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,13 @@
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\bin\Debug\Lab0204 MDI Form.exe.config
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\bin\Debug\Lab0204 MDI Form.exe
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\bin\Debug\Lab0204 MDI Form.pdb
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204 MDI Form.csproj.AssemblyReference.cache
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204 MDI Form.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204_MDI_Form.Form1.resources
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204_MDI_Form.Properties.Resources.resources
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204 MDI Form.csproj.GenerateResource.cache
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204 MDI Form.csproj.CoreCompileInputs.cache
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204 MDI Form.exe
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204 MDI Form.pdb
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204_MDI_Form.Form2.resources
+C:\APD\Lab0204 MDI Form\Lab0204 MDI Form\obj\Debug\Lab0204_MDI_Form.Form3.resources

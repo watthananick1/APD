@@ -1,0 +1,16 @@
+C:\APD\Lab0401 Shop Application\bin\Debug\Lab0401 Shop Application.exe.config
+C:\APD\Lab0401 Shop Application\bin\Debug\Lab0401 Shop Application.exe
+C:\APD\Lab0401 Shop Application\bin\Debug\Lab0401 Shop Application.pdb
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401 Shop Application.csproj.AssemblyReference.cache
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401 Shop Application.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401_Shop_Application.Form1.resources
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401_Shop_Application.Properties.Resources.resources
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401 Shop Application.csproj.GenerateResource.cache
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401 Shop Application.csproj.CoreCompileInputs.cache
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401 Shop Application.exe
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401 Shop Application.pdb
+C:\APD\Lab0401 Shop Application\bin\Debug\EntityFramework.dll
+C:\APD\Lab0401 Shop Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\APD\Lab0401 Shop Application\bin\Debug\EntityFramework.xml
+C:\APD\Lab0401 Shop Application\bin\Debug\EntityFramework.SqlServer.xml
+C:\APD\Lab0401 Shop Application\obj\Debug\Lab0401 Shop Application.csproj.CopyComplete

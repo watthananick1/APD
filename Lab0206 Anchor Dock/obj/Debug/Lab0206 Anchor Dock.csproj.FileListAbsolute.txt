@@ -1,0 +1,11 @@
+C:\APD\Lab0206 Anchor Dock\bin\Debug\Lab0206 Anchor Dock.exe.config
+C:\APD\Lab0206 Anchor Dock\bin\Debug\Lab0206 Anchor Dock.exe
+C:\APD\Lab0206 Anchor Dock\bin\Debug\Lab0206 Anchor Dock.pdb
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206 Anchor Dock.csproj.AssemblyReference.cache
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206 Anchor Dock.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206_Anchor_Dock.Form1.resources
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206_Anchor_Dock.Properties.Resources.resources
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206 Anchor Dock.csproj.GenerateResource.cache
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206 Anchor Dock.csproj.CoreCompileInputs.cache
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206 Anchor Dock.exe
+C:\APD\Lab0206 Anchor Dock\obj\Debug\Lab0206 Anchor Dock.pdb

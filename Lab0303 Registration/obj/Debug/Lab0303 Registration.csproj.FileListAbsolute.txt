@@ -1,0 +1,16 @@
+C:\APD\Lab0303 Registration\bin\Debug\Lab0303 Registration.exe.config
+C:\APD\Lab0303 Registration\bin\Debug\Lab0303 Registration.exe
+C:\APD\Lab0303 Registration\bin\Debug\Lab0303 Registration.pdb
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303 Registration.csproj.AssemblyReference.cache
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303 Registration.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303_Registration.Properties.Resources.resources
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303 Registration.csproj.GenerateResource.cache
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303 Registration.csproj.CoreCompileInputs.cache
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303 Registration.exe
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303 Registration.pdb
+C:\APD\Lab0303 Registration\bin\Debug\EntityFramework.dll
+C:\APD\Lab0303 Registration\bin\Debug\EntityFramework.SqlServer.dll
+C:\APD\Lab0303 Registration\bin\Debug\EntityFramework.xml
+C:\APD\Lab0303 Registration\bin\Debug\EntityFramework.SqlServer.xml
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303_Registration.Form1.resources
+C:\APD\Lab0303 Registration\obj\Debug\Lab0303 Registration.csproj.CopyComplete

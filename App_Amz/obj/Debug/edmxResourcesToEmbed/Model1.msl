@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="APD65_63011212052ModelStoreContainer" CdmEntityContainer="APD65_63011212052Entities1">
+    <EntitySetMapping Name="ADtype">
+      <EntityTypeMapping TypeName="APD65_63011212052Model.ADtype">
+        <MappingFragment StoreEntitySet="ADtype">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="D_name" ColumnName="D_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AOrderItem">
+      <EntityTypeMapping TypeName="APD65_63011212052Model.AOrderItem">
+        <MappingFragment StoreEntitySet="AOrderItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="O_id" ColumnName="O_id" />
+          <ScalarProperty Name="P_id" ColumnName="P_id" />
+          <ScalarProperty Name="U_price" ColumnName="U_price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="P_name" ColumnName="P_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APrduct">
+      <EntityTypeMapping TypeName="APD65_63011212052Model.APrduct">
+        <MappingFragment StoreEntitySet="APrduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="P_Name" ColumnName="P_Name" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="D_type" ColumnName="D_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AType">
+      <EntityTypeMapping TypeName="APD65_63011212052Model.AType">
+        <MappingFragment StoreEntitySet="AType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="T_name" ColumnName="T_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderProduct">
+      <EntityTypeMapping TypeName="APD65_63011212052Model.OrderProduct">
+        <MappingFragment StoreEntitySet="OrderProduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

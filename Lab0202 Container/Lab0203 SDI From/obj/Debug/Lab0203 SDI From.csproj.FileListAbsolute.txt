@@ -1,0 +1,12 @@
+C:\APD\Lab0202 Container\Lab0203 SDI From\bin\Debug\Lab0203 SDI From.exe.config
+C:\APD\Lab0202 Container\Lab0203 SDI From\bin\Debug\Lab0203 SDI From.exe
+C:\APD\Lab0202 Container\Lab0203 SDI From\bin\Debug\Lab0203 SDI From.pdb
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203 SDI From.csproj.AssemblyReference.cache
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203 SDI From.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203_SDI_From.Form1.resources
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203_SDI_From.Form2.resources
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203_SDI_From.Properties.Resources.resources
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203 SDI From.csproj.GenerateResource.cache
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203 SDI From.csproj.CoreCompileInputs.cache
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203 SDI From.exe
+C:\APD\Lab0202 Container\Lab0203 SDI From\obj\Debug\Lab0203 SDI From.pdb

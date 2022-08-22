@@ -1,0 +1,16 @@
+C:\APD\Lab0302 Data Binding\bin\Debug\Lab0302 Data Binding.exe.config
+C:\APD\Lab0302 Data Binding\bin\Debug\Lab0302 Data Binding.exe
+C:\APD\Lab0302 Data Binding\bin\Debug\Lab0302 Data Binding.pdb
+C:\APD\Lab0302 Data Binding\bin\Debug\EntityFramework.dll
+C:\APD\Lab0302 Data Binding\bin\Debug\EntityFramework.SqlServer.dll
+C:\APD\Lab0302 Data Binding\bin\Debug\EntityFramework.xml
+C:\APD\Lab0302 Data Binding\bin\Debug\EntityFramework.SqlServer.xml
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302 Data Binding.csproj.AssemblyReference.cache
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302 Data Binding.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302_Data_Binding.Form1.resources
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302_Data_Binding.Properties.Resources.resources
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302 Data Binding.csproj.GenerateResource.cache
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302 Data Binding.csproj.CoreCompileInputs.cache
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302 Data Binding.csproj.CopyComplete
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302 Data Binding.exe
+C:\APD\Lab0302 Data Binding\obj\Debug\Lab0302 Data Binding.pdb

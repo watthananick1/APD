@@ -1,0 +1,16 @@
+C:\APD\App_Amz\bin\Debug\App_Amz.exe.config
+C:\APD\App_Amz\bin\Debug\App_Amz.exe
+C:\APD\App_Amz\bin\Debug\App_Amz.pdb
+C:\APD\App_Amz\obj\Debug\App_Amz.csproj.AssemblyReference.cache
+C:\APD\App_Amz\obj\Debug\App_Amz.csproj.SuggestedBindingRedirects.cache
+C:\APD\App_Amz\obj\Debug\App_Amz.Form1.resources
+C:\APD\App_Amz\obj\Debug\App_Amz.Properties.Resources.resources
+C:\APD\App_Amz\obj\Debug\App_Amz.csproj.GenerateResource.cache
+C:\APD\App_Amz\obj\Debug\App_Amz.csproj.CoreCompileInputs.cache
+C:\APD\App_Amz\obj\Debug\App_Amz.exe
+C:\APD\App_Amz\obj\Debug\App_Amz.pdb
+C:\APD\App_Amz\bin\Debug\EntityFramework.dll
+C:\APD\App_Amz\bin\Debug\EntityFramework.SqlServer.dll
+C:\APD\App_Amz\bin\Debug\EntityFramework.xml
+C:\APD\App_Amz\bin\Debug\EntityFramework.SqlServer.xml
+C:\APD\App_Amz\obj\Debug\App_Amz.csproj.CopyComplete

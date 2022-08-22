@@ -1,0 +1,11 @@
+C:\APD\Lab0205 Components\bin\Debug\Lab0205 Components.exe.config
+C:\APD\Lab0205 Components\bin\Debug\Lab0205 Components.exe
+C:\APD\Lab0205 Components\bin\Debug\Lab0205 Components.pdb
+C:\APD\Lab0205 Components\obj\Debug\Lab0205 Components.csproj.AssemblyReference.cache
+C:\APD\Lab0205 Components\obj\Debug\Lab0205 Components.csproj.SuggestedBindingRedirects.cache
+C:\APD\Lab0205 Components\obj\Debug\Lab0205_Components.Form1.resources
+C:\APD\Lab0205 Components\obj\Debug\Lab0205_Components.Properties.Resources.resources
+C:\APD\Lab0205 Components\obj\Debug\Lab0205 Components.csproj.GenerateResource.cache
+C:\APD\Lab0205 Components\obj\Debug\Lab0205 Components.csproj.CoreCompileInputs.cache
+C:\APD\Lab0205 Components\obj\Debug\Lab0205 Components.exe
+C:\APD\Lab0205 Components\obj\Debug\Lab0205 Components.pdb
